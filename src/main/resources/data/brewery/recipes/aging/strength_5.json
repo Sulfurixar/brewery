@@ -1,0 +1,42 @@
+{
+    "type": "brewery:aging",
+    "ingredients": [
+        {
+            "id": "enchanced_potion_strength",
+            "item": "minecraft:potion",
+            "data": {
+                "display":{
+                    "Name": "[{\"text\":\"Enhanced Potion of Strength\", \"italic\":false, \"color\":\"gold\"}]"
+                },
+                "CustomPotionEffects": [
+                    {
+                        "Id": 5,
+                        "Amplifier": 5,
+                        "Duration": 1800
+                    }
+                ],
+                "Potion": "minecraft:strength",
+                "HideFlags": 32
+        }
+        }
+    ],
+    "result": {
+        "item": "minecraft:potion",
+        "data": {
+            "display":{
+                "Name": "[{\"text\":\"Maximized Potion of Strength\", \"italic\":false, \"color\":\"dark_purple\"}]"
+            },
+            "CustomPotionEffects": [
+                {
+                    "Id": 5,
+                    "Amplifier": 6,
+                    "Duration": 1800
+                }
+            ],
+            "Potion": "minecraft:strength",
+            "HideFlags": 32
+        }
+    },
+    "difficulty": 28,
+    "age": 1
+}

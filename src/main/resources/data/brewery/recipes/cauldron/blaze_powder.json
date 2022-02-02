@@ -1,0 +1,32 @@
+{
+    "type": "brewery:cauldron",
+    "ingredients": [
+        { 
+            "id": "gunpowder",
+            "item": "minecraft:gunpowder",
+            "count": 3
+        },
+        { 
+            "id": "charcoal",
+            "item": "minecraft:charcoal",
+            "count": 3
+        },
+        { 
+            "id": "redstone",
+            "item": "minecraft:redstone",
+            "count": 3
+        }
+    ],
+    "result": {
+        "item": "minecraft:blaze_powder",
+        "data": {
+            "display":{
+                "Name": "[{\"text\":\"Alchemized Blaze Powder\", \"italic\":false, \"color\":\"gold\"}]"
+            },
+            "CustomModelData": 1
+        }
+    },
+    "cook_time": 1,
+    "difficulty": 5,
+    "temperature": 1
+}

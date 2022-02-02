@@ -1,0 +1,58 @@
+{
+    "type": "brewery:cauldron",
+    "ingredients": [
+        { 
+            "id": "nice_sugar",
+            "item": "minecraft:sugar",
+            "data": {
+                "CustomModelData": 1,
+                "display":{
+                    "Name": "[{\"text\":\"Nice Sugar\", \"italic\":false, \"color\":\"gold\"}]"
+                }
+            },
+            "count": 3
+        }
+    ],
+    "result": {
+        "item": "minecraft:potion",
+        "data": {
+            "display":{
+                "Name": "[{\"text\":\"Flavoured Water\", \"italic\":false, \"color\":\"gold\"}]"
+            },
+            "CustomPotionEffects": [],
+            "Potion": "minecraft:water",
+            "CustomPotionColor": 29951,
+            "HideFlags": 32
+        }
+    },
+    "failed_results": [
+        {
+            "item": "minecraft:potion",
+            "data": {
+                "display":{
+                    "Name": "[{\"text\":\"Sugary Solution\", \"italic\":false, \"color\":\"gold\"}]"
+                },
+                "CustomPotionEffects": [],
+                "Potion": "minecraft:water",
+                "CustomPotionColor": 29951,
+                "HideFlags": 32
+            },
+            "percentage": 80
+        },
+        {
+            "item": "minecraft:potion",
+            "data": {
+                "display":{
+                    "Name": "[{\"text\":\"Unsolved Sugar\", \"italic\":false, \"color\":\"gold\"}]"
+                },
+                "CustomPotionEffects": [],
+                "CustomPotionColor": 29951,
+                "HideFlags": 32
+            },
+            "percentage": 30
+        }
+    ],
+    "cook_time": 5,
+    "difficulty": 5,
+    "temperature": 3
+}

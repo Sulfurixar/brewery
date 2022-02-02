@@ -1,0 +1,30 @@
+{
+    "type": "brewery:distilling",
+    "ingredients": [
+        { 
+            "id": "magic_extract",
+            "item": "minecraft:potion",
+            "data": {
+                "display":{
+                    "Name": "[{\"text\":\"Magic Extract\", \"italic\":false, \"color\":\"gold\"}]"
+                },
+                "CustomPotionEffects": [],
+                "Potion": "minecraft:awkward",
+                "HideFlags": 32
+            }
+        }
+    ],
+    "result": {
+        "item": "minecraft:potion",
+        "data": {
+            "display":{
+                "Name": "[{\"text\":\"Refined Magic Extract\", \"italic\":false, \"color\":\"gold\"}]"
+            },
+            "CustomPotionEffects": [],
+            "Potion": "minecraft:awkward",
+            "HideFlags": 32
+        }
+    },
+    "difficulty": 28,
+    "distills": 6
+}

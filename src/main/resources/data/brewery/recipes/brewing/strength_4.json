@@ -1,0 +1,40 @@
+{
+    "type": "brewery:brewing",
+    "ingredients": [
+        {
+            "id": "refined_magic_extract",
+            "item": "minecraft:potion",
+            "data": {
+                "display":{
+                    "Name": "[{\"text\":\"Refined Magic Extract\", \"italic\":false, \"color\":\"gold\"}]"
+                },
+                "CustomPotionEffects": [],
+                "Potion": "minecraft:awkward",
+                "HideFlags": 32
+            }
+        }
+    ],
+    "catalyst": {
+        "id": "blaze_powder",
+        "item": "minecraft:blaze_powder"
+    },
+    "result": {
+        "item": "minecraft:potion",
+        "data": {
+            "display":{
+                "Name": "[{\"text\":\"Enhanced Potion of Strength\", \"italic\":false, \"color\":\"gold\"}]"
+            },
+            "CustomPotionEffects": [
+                {
+                    "Id": 5,
+                    "Amplifier": 5,
+                    "Duration": 1800
+                }
+            ],
+            "Potion": "minecraft:strength",
+            "HideFlags": 32
+        }
+    },
+    "difficulty": 28,
+    "age": 1
+}

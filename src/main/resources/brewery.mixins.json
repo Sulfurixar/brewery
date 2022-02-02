@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.zener.brewery.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "RecipeManagerAccessor",
+    "AbstractCauldronBlockMixin",
+    "SyncronizeRecipesS2CPacketMixin",
+    "RegistryAccessor",
+    "BrewingStandBlockEntityMixin",
+    "IBrewingStandBlockEntity",
+    "BarrelBlockEntityMixin",
+    "ScreenHandlerMixin"
+  ],
+  "client": [
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
