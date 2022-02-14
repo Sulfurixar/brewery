@@ -195,7 +195,7 @@ public class CauldronBlockEntity extends LootableContainerBlockEntity {
                 return true;
             }
 
-            RecipeManager recipeManager = player.getWorld().getRecipeManager();
+            RecipeManager recipeManager = player.world.getRecipeManager();
             RecipeManagerAccessor accessor = (RecipeManagerAccessor) recipeManager;
             Map<CauldronRecipe, Result> results = new HashMap<CauldronRecipe, Result>();
 
@@ -442,7 +442,7 @@ public class CauldronBlockEntity extends LootableContainerBlockEntity {
     }
 
     @Override
-    protected void writeNbt(NbtCompound nbt) {
+    public NbtCompound writeNbt(NbtCompound nbt) {
         super.writeNbt(nbt);
         nbt.putBoolean("HeatStatus", heat_status);
         nbt.putByte("HeatStrength", heat_strength);
@@ -452,6 +452,7 @@ public class CauldronBlockEntity extends LootableContainerBlockEntity {
         if (!this.serializeLootTable(nbt)) {
             Inventories.writeNbt(nbt, this.inventory);
         }
+        return nbt;
     }
 
     private boolean isHeated(World world, BlockPos pos) {
